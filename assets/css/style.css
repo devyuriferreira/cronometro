@@ -62,7 +62,7 @@ h1 {
 }
 
 .relogio {
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
 }
 
@@ -93,12 +93,39 @@ button {
     border: none;
     background-color: var(--primary-color);
     color: white;
-    width: 60px;
-    height: 35px;
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px black;
 }
 
-@media screen and (max-width: 600px) {
 
+button.pausar {
+  background-color: rgb(161, 123, 25);
+  color: white;
+}
+
+button.zerar {
+  background-color: rgb(255, 54, 54);
+}
+
+button.iniciar:hover {
+  padding: 15px;
+  background-color: rgb(52, 119, 133);
+  transition: .5s;
+}
+button.pausar:hover {
+  padding: 15px;
+  background-color: rgb(131, 106, 44);
+  transition: .5s;
+}
+button.zerar:hover {
+  padding: 15px;
+  background-color: rgb(185, 43, 43);
+  transition: .5s;
+}
+@media screen and (max-width: 600px) {
+  
   .container {
     width: 400px;
   }
